@@ -21,6 +21,7 @@ Habran 3 secciones. En todas aparecera la barra de menu de arriba.
   - Si hay mas de una unidad de producto aparecera el numero de unidades donde creas conveniente
   - Si le damos a eliminar se eliminar solo una unidad. Si pasa a cero desaparecera del listado.
  
-  Tendremos que hacerlo Tanto con React usando React Router como con Next con su sistema de Rutas.
+  - Tendremos que hacerlo Tanto con React usando React Router como con Next con su sistema de Rutas.
+  - Tendremos que hacer tambien una version con ContextAPI y otra con Zustand
 
   
