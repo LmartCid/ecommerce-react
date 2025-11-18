@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini E-Commerce</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- HEADER -->
+  <header class="bg-white shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold">Mini Shop</h1>
+      <nav>
+        <ul class="flex gap-6">
+          <li><a href="#" class="hover:text-gray-700 font-medium">Inicio</a></li>
+          <li><a href="#" class="hover:text-gray-700 font-medium">Carrito (2)</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======================= -->
+  <!--        CATÁLOGO         -->
+  <!-- ======================= -->
+
+  <section class="max-w-6xl mx-auto px-4 py-10">
+    <h2 class="text-2xl font-bold mb-6">Catálogo</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+      <!-- PRODUCTO -->
+      <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition flex flex-col">
+        <a href="#" class="block mb-4">
+          <div class="h-40 bg-gray-200 rounded-lg"></div>
+        </a>
+
+        <h3 class="font-semibold text-lg">Camiseta Negra</h3>
+        <p class="text-gray-600 text-sm mb-2">Camiseta de algodón premium.</p>
+        <p class="font-bold text-gray-700 mb-4">19,99€</p>
+
+        <div class="mt-auto flex gap-2">
+          <button class="flex-1 bg-gray-800 text-white py-2 rounded-lg hover:bg-gray-900 text-sm">
+            Añadir
+          </button>
+          <button class="bg-gray-300 text-gray-800 px-3 py-2 rounded-lg hover:bg-gray-400 text-sm">
+            Eliminar
+          </button>
+        </div>
+      </div>
+
+      <!-- PRODUCTO -->
+      <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition flex flex-col">
+        <a href="#" class="block mb-4">
+          <div class="h-40 bg-gray-200 rounded-lg"></div>
+        </a>
+
+        <h3 class="font-semibold text-lg">Sudadera Essentials</h3>
+        <p class="text-gray-600 text-sm mb-2">Comodidad y estilo.</p>
+        <p class="font-bold text-gray-700 mb-4">39,99€</p>
+
+        <div class="mt-auto flex gap-2">
+          <button class="flex-1 bg-gray-800 text-white py-2 rounded-lg hover:bg-gray-900 text-sm">
+            Añadir
+          </button>
+          <button class="bg-gray-300 text-gray-800 px-3 py-2 rounded-lg hover:bg-gray-400 text-sm">
+            Eliminar
+          </button>
+        </div>
+      </div>
+
+      <!-- PRODUCTO -->
+      <div class="bg-white rounded-xl shadow p-4 hover:shadow-lg transition flex flex-col">
+        <a href="#" class="block mb-4">
+          <div class="h-40 bg-gray-200 rounded-lg"></div>
+        </a>
+
+        <h3 class="font-semibold text-lg">Zapatillas Urban</h3>
+        <p class="text-gray-600 text-sm mb-2">Perfectas para el día a día.</p>
+        <p class="font-bold text-gray-700 mb-4">59,99€</p>
+
+        <div class="mt-auto flex gap-2">
+          <button class="flex-1 bg-gray-800 text-white py-2 rounded-lg hover:bg-gray-900 text-sm">
+            Añadir
+          </button>
+          <button class="bg-gray-300 text-gray-800 px-3 py-2 rounded-lg hover:bg-gray-400 text-sm">
+            Eliminar
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================= -->
+  <!--    DETALLE PRODUCTO     -->
+  <!-- ======================= -->
+
+  <section class="max-w-4xl mx-auto px-4 py-10">
+    <h2 class="text-2xl font-bold mb-6">Detalle del producto</h2>
+
+    <div class="bg-white rounded-xl shadow p-6 flex flex-col md:flex-row gap-8">
+
+      <div class="flex-1">
+        <div class="h-64 bg-gray-200 rounded-lg"></div>
+      </div>
+
+      <div class="flex-1">
+        <h3 class="text-2xl font-bold mb-2">Camiseta Negra</h3>
+        <p class="text-gray-600 mb-4">
+          Camiseta de algodón 100% premium. Muy cómoda y resistente.
+        </p>
+
+        <p class="text-3xl font-bold text-gray-700 mb-6">19,99€</p>
+
+        <div class="flex gap-2">
+          <button class="bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-900">
+            Añadir al carrito
+          </button>
+          <button class="bg-gray-300 text-gray-800 px-4 py-3 rounded-lg hover:bg-gray-400">
+            Eliminar
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ======================= -->
+  <!--         CARRITO         -->
+  <!-- ======================= -->
+
+  <section class="max-w-4xl mx-auto px-4 py-10">
+    <h2 class="text-2xl font-bold mb-6">Carrito</h2>
+
+    <div class="bg-white rounded-xl shadow p-6 space-y-6">
+
+      <div class="flex justify-between items-center border-b pb-4">
+        <div class="flex items-center gap-4">
+          <div class="w-16 h-16 bg-gray-200 rounded-lg"></div>
+          <div>
+            <p class="font-medium">Camiseta Negra</p>
+            <p class="text-gray-600 text-sm">19,99€</p>
+          </div>
+        </div>
+        <button class="bg-gray-300 text-gray-800 px-3 py-2 rounded-lg hover:bg-gray-400">
+          Eliminar
+        </button>
+      </div>
+
+      <div class="flex justify-between items-center border-b pb-4">
+        <div class="flex items-center gap-4">
+          <div class="w-16 h-16 bg-gray-200 rounded-lg"></div>
+          <div>
+            <p class="font-medium">Sudadera Essentials</p>
+            <p class="text-gray-600 text-sm">39,99€</p>
+          </div>
+        </div>
+        <button class="bg-gray-300 text-gray-800 px-3 py-2 rounded-lg hover:bg-gray-400">
+          Eliminar
+        </button>
+      </div>
+
+      <div class="flex justify-between items-center pt-4">
+        <p class="text-xl font-semibold">Total:</p>
+        <p class="text-xl font-bold text-gray-700">59,98€</p>
+      </div>
+
+      <button class="w-full bg-gray-800 text-white py-3 rounded-lg hover:bg-gray-900">
+        Proceder al pago
+      </button>
+
+    </div>
+  </section>
+
+</body>
+</html>
