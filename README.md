@@ -20,8 +20,8 @@ Habran 3 secciones. En todas aparecera la barra de menu de arriba.
   - Al pulsar en la palabra carrito del menu iremos a /cart donde mostraremos el listado de productos igual que en el template.
   - Si hay mas de una unidad de producto aparecera el numero de unidades donde creas conveniente
   - Si le damos a eliminar se eliminar solo una unidad. Si pasa a cero desaparecera del listado.
- 
-  - Tendremos que hacerlo Tanto con React usando React Router como con Next con su sistema de Rutas.
-  - Tendremos que hacer tambien una version con ContextAPI y otra con Zustand
+
+  - Crearemos una version con React Router y ContextAPI (La rama se llamara nombre-apellido-context)
+  - Creeramoe otra versión con el sistema de Rutas de Next y Zustand (La rama se llamara nombre-apellido-zustand)
 
   
