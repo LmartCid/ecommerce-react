@@ -22,6 +22,6 @@ Habran 3 secciones. En todas aparecera la barra de menu de arriba.
   - Si le damos a eliminar se eliminar solo una unidad. Si pasa a cero desaparecera del listado.
 
   - Crearemos una version con React Router y ContextAPI (La rama se llamara nombre-apellido-context)
-  - Creeramoe otra versión con el sistema de Rutas de Next y Zustand (La rama se llamara nombre-apellido-zustand)
+  - Crearemos otra versión con el sistema de Rutas de Next y Zustand (La rama se llamara nombre-apellido-zustand)
 
   
