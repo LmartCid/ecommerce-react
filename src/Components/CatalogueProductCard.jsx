@@ -11,21 +11,21 @@ function ProductCardCatalogue({ product }) {
             <div className="flex justify-center font-bold">{product.name}</div>
             <div className="flex justify-center">{product.description}</div>
             <div className="flex justify-center font-bold">{`${product.price} €`}</div>
-            <ProductCardCatalogueOptions product={product} />
+            <CatalogueProductCardOptions product={product} />
         </div>
     )
 }
 
-function ProductCardCatalogueOptions({ product }) {
+function CatalogueProductCardOptions({ product }) {
     const { addToCart, removeCartProduct } = useContext(cartContext)
 
-    function addToCartHandler(e) {
-        e.stopPropagation()
+    function addToCartHandler(event) {
+        event.stopPropagation()
         addToCart(product)
     }
 
-    function removeCartProductHandler(e) {
-        e.stopPropagation()
+    function removeCartProductHandler(event) {
+        event.stopPropagation()
         removeCartProduct(product)
     }
 

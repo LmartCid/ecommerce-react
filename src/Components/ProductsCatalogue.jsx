@@ -1,4 +1,4 @@
-import ProductCardCatalogue from "./ProductCardCatalogue"
+import ProductCardCatalogue from "./CatalogueProductCard"
 
 function ProductsCatalogue({ productList }) {
     return (

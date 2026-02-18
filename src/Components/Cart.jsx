@@ -3,7 +3,7 @@ import { cartContext } from "./ProductsCartContext"
 import ProductsInCart from "./ProductsInCart"
 
 function getTotalPrice(cartItems) {
-    return cartItems.reduce((acc, product) => (acc + (product.price * product.quantity)), 0)
+    return cartItems.reduce((totalAmount, product) => (totalAmount + (product.price * product.quantity)), 0)
 }
 
 function Cart() {

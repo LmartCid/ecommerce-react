@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom"
 import products from "../products"
-import DetailProductCard from "./DetailProductCard"
+import DetailProductCard from "./ProductCardDetail"
 
-function DetailProduct() {
+function ProductDetail() {
     const { id } = useParams()
 
         const productId = Number(id)
@@ -18,4 +18,4 @@ function DetailProduct() {
         </>
     )
 }
-export default DetailProduct
+export default ProductDetail

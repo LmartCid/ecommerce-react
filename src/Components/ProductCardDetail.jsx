@@ -1,7 +1,7 @@
 import { useContext } from "react"
 import { cartContext } from "./ProductsCartContext"
 
-function DetailProductCard({productSelected}) {
+function ProductCardDetail({productSelected}) {
 
     if(!productSelected) { 
         return <div className="font-bold">Producto NO encontrado</div>
@@ -14,13 +14,13 @@ function DetailProductCard({productSelected}) {
                     <div className="font-bold text-xl">{productSelected.name}</div>
                     <div className="text-lg text-gray-500">{productSelected.detailInfo}</div>
                     <div className="font-bold text-[26px]">{`${productSelected.price} €`}</div>
-                    <DetailProductCardOptions productSelected={productSelected} />
+                    <ProductCardDetailOptions productSelected={productSelected} />
                 </div>
             </div>
     )
 }
 
-function DetailProductCardOptions({productSelected}) {
+function ProductCardDetailOptions({productSelected}) {
     const {addToCart, removeCartProduct} = useContext(cartContext)
     return (
         <div className="flex gap-4">
@@ -30,4 +30,4 @@ function DetailProductCardOptions({productSelected}) {
     )
 }
 
-export default DetailProductCard
+export default ProductCardDetail

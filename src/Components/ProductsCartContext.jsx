@@ -32,11 +32,10 @@ function ProductsProvider({ children }) {
     }
 
     function getTotalProducts(cartItems) {
-        const INITIAL_AMOUNT = 0
-        const totalProducts = cartItems.reduce((acc, product) => (acc + (product.quantity)), INITIAL_AMOUNT)
-        return totalProducts
+        return cartItems.reduce((totalQuantity, product) => (totalQuantity + (product.quantity)), 0)  
     }
-    const valuesContext = { cartItems, setCartItems, addToCart, removeCartProduct, getTotalProducts }
+
+    const valuesContext = { cartItems, addToCart, removeCartProduct, getTotalProducts }
 
     return <cartContext.Provider value={valuesContext}>{children}</cartContext.Provider>
 }
