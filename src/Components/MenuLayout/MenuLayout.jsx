@@ -1,13 +1,13 @@
 import { Outlet, Link } from "react-router-dom"
-import { cartContext } from "./ProductsCartContext"
+import { cartContext } from "../ProductsCartContext/ProductsCartContext"
 import { useContext } from "react"
 
 const URL_CART = "/cart"
 
 function MenuLayout() {
 
-    const { cartItems, getTotalProducts } = useContext(cartContext)
-    const totalProducts = getTotalProducts(cartItems)
+    const { cartProducts, getTotalProducts } = useContext(cartContext)
+    const totalProducts = getTotalProducts(cartProducts)
 
     return (
         <>

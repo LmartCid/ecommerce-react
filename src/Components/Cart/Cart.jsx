@@ -1,17 +1,13 @@
 import { useContext } from "react"
-import { cartContext } from "./ProductsCartContext"
-import ProductsInCart from "./ProductsInCart"
-
-function getTotalPrice(cartItems) {
-    return cartItems.reduce((totalAmount, product) => (totalAmount + (product.price * product.quantity)), 0)
-}
+import { cartContext } from "../ProductsCartContext/ProductsCartContext"
+import ProductsInCart from "../ProductsInCart/ProductsInCart"
 
 function Cart() {
 
-    const { cartItems, removeCartProduct } = useContext(cartContext)
-    const totalPrice = getTotalPrice(cartItems).toFixed(2)
+    const { cartProducts, getTotalPrice } = useContext(cartContext)
+    const totalPrice = getTotalPrice(cartProducts).toFixed(2)
 
-    if (cartItems.length === 0) {
+    if (cartProducts.length === 0) {
         return  <div className="font-bold">No se encuentran productos añadidos en el carrito</div>   
     }
 
@@ -19,8 +15,8 @@ function Cart() {
         
             <div className="flex flex-col items-center bg-white rounded-[10px]">
                 {
-                    cartItems.map((item) => (
-                        <ProductsInCart key={item.id} product={item} removeCartProduct={removeCartProduct} />
+                    cartProducts.map((product) => (
+                        <ProductsInCart key={product.id} product={product} />
                     ))
                 }
 

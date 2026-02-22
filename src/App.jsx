@@ -1,9 +1,9 @@
 
-import MenuLayout from './Components/MenuLayout'
-import Home from './Components/Home'
-import ProductDetail from './Components/ProductDetail'
+import MenuLayout from './Components/MenuLayout/MenuLayout'
+import Home from './Components/Home/Home'
+import ProductDetail from './Components/ProductDetail/ProductDetail'
 import { Routes, Route } from 'react-router-dom'
-import Cart from './Components/Cart'
+import Cart from './Components/Cart/Cart'
 
 
 function App() {
