@@ -1,5 +1,5 @@
 
-import MenuLayout from './Components/MenuLayout/MenuLayout'
+import Menu from './Components/Menu/Menu'
 import Home from './Components/Home/Home'
 import ProductDetail from './Components/ProductDetail/ProductDetail'
 import { Routes, Route } from 'react-router-dom'
@@ -10,7 +10,7 @@ function App() {
 
     return (
         <Routes>
-            <Route path='/' element={<MenuLayout />}>
+            <Route path='/' element={<Menu />}>
                 <Route index element={<Home />} />
                 <Route path="/cart" element={<Cart />} />
                 <Route path='/detail/:id' element={<ProductDetail />} />

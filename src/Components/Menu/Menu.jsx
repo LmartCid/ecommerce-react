@@ -4,7 +4,7 @@ import { useContext } from "react"
 
 const URL_CART = "/cart"
 
-function MenuLayout() {
+function Menu() {
 
     const { cartProducts, getTotalProducts } = useContext(cartContext)
     const totalProducts = getTotalProducts(cartProducts)
@@ -25,4 +25,4 @@ function MenuLayout() {
         </>
     )
 }
-export default MenuLayout
+export default Menu

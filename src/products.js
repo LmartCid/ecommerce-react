@@ -1,9 +1,12 @@
+import blackshirt from "./assets/images/blackshirt.png"
+import hoodie from "./assets/images/hoodie.png"
+import sneakers from "./assets/images/sneakers.png"
 
 const products = [
     {
         id: 1,
         name: "Camiseta Negra",
-        imageUrl: "/camiseta-negra.png",
+        image: blackshirt,
         description: "Camiseta de algodón premium",
         detailInfo: "Camiseta de algodón 100 % premium. Muy cómoda y resistente",
         price: 19.99
@@ -11,7 +14,7 @@ const products = [
     {
         id: 2,
         name: "Sudadera Essentials",
-        imageUrl: "/sudadera.png",
+        image: hoodie,
         description: "Comodidad y estilo",
         detailInfo: "Comodidad y estilo. Con capucha para protegerse del frio",
         price: 39.99
@@ -20,7 +23,7 @@ const products = [
     { 
     id: 3, 
     name: "Zapatillas Urban", 
-    imageUrl: "/zapatillas-urban.png", 
+    image: sneakers, 
     description: "Perfectas para el día a día", 
     detailInfo:"Perfectas para el día a día. Suela acolchada para un mayor confort al caminar",
     price: 59.99 

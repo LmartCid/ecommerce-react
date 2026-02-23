@@ -5,7 +5,7 @@ import ProductsInCart from "../ProductsInCart/ProductsInCart"
 function Cart() {
 
     const { cartProducts, getTotalPrice } = useContext(cartContext)
-    const totalPrice = getTotalPrice(cartProducts).toFixed(2)
+    const totalPrice = getTotalPrice(cartProducts)
 
     if (cartProducts.length === 0) {
         return  <div className="font-bold">No se encuentran productos añadidos en el carrito</div>   

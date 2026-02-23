@@ -18,7 +18,7 @@ function ProductCardCatalogue({ product }) {
 
     return (
         <div onClick={() => { navigate(`/detail/${product.id}`) }} className="flex-col bg-white rounded-[10px] mt-4 mb-4 cursor-pointer">
-            <div className="w-64 min-h-60 mt-4"><img src={product.imageUrl} alt={product.name} /></div>
+            <div className="w-64 min-h-60 mt-4"><img src={product.image} alt={product.name} /></div>
             <div className="flex justify-center font-bold">{product.name}</div>
             <div className="flex justify-center">{product.description}</div>
             <div className="flex justify-center font-bold">{`${product.price} €`}</div>

@@ -7,7 +7,7 @@ function ProductsInCart({ product }) {
 
     return (
         <div className="flex items-center gap-4 mb-4" >
-            <div className="w-24 h-24 flex items-center"><img src={product.imageUrl} alt={product.name} /></div>
+            <div className="w-24 h-24 flex items-center"><img src={product.image} alt={product.name} /></div>
             <div className="flex flex-col justify-center items-start w-[512px]">
                 <div className="font-bold">{product.name}</div>
                 <div>{`${product.price} € (x ${product.quantity})`}</div>
