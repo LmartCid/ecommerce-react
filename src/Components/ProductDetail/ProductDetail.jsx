@@ -1,14 +1,13 @@
 import { useParams } from "react-router-dom"
-import products from "../../products"
 import { useContext } from "react"
 import { cartContext } from "../ProductsCartContext/ProductsCartContext"
 
 function ProductDetail() {
-    const { addToCart, removeToCart } = useContext(cartContext)
+    const { addToCart, removeToCart, getProductById } = useContext(cartContext)
     const { id } = useParams()
 
     const productId = Number(id)
-    const productSelected = products.find((product) => (product.id === productId))
+    const productSelected = getProductById(productId)
 
     if (!productSelected) {
         return <div className="font-bold">Producto NO encontrado</div>

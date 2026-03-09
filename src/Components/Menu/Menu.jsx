@@ -2,10 +2,7 @@ import { Outlet, Link } from "react-router-dom"
 import { cartContext } from "../ProductsCartContext/ProductsCartContext"
 import { useContext } from "react"
 
-const URL_CART = "/cart"
-
 function Menu() {
-
     const { cartProducts, getTotalProducts } = useContext(cartContext)
     const totalProducts = getTotalProducts(cartProducts)
 
@@ -15,7 +12,7 @@ function Menu() {
                 <div className="flex justify-center items-center font-bold w-96 ml-96">Mini Shop</div>
                 <div className="flex justify-end items-center gap-4 w-full">
                     <Link className="cursor-pointer" to="/">Inicio</Link>
-                    <Link className="font-bold mr-4 cursor-pointer" to={URL_CART}>{`Carrito (${totalProducts})`}</Link>
+                    <Link className="font-bold mr-4 cursor-pointer" to="/cart">{`Carrito (${totalProducts})`}</Link>
                 </div>
             </nav>
 

@@ -1,4 +1,4 @@
-import ProductCardCatalogue from "../ProductCardCatalogue/ProductCardCatalogue"
+import ProductCardCatalogue from "../ProductCard/ProductCard"
 import products from "../../products"
 
 function ProductsCatalogue() {
