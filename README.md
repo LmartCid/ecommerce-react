@@ -1,27 +1,40 @@
-# Mini Ecommerce
+# E-commerce React
 
+Aplicación frontend de comercio electrónico desarrollada con React y JavaScript.
 
-Para este proyecto tenemos un archivo html donde podremos ver el diseño. (No se hace todo en la misma pagina)
+La aplicación permite visualizar un catálogo de productos, consultar el detalle de cada producto y gestionar un carrito de compra. La navegación entre las diferentes vistas se realiza mediante React Router y el estado global del carrito se gestiona mediante Context API.
 
-Habran 3 secciones. En todas aparecera la barra de menu de arriba.
+## Funcionalidades
 
-- Home.
-  - Aparecera el listado de productos.
-  - Este listado teneis que crearlo vosotros en un array de objetos que luego usareis para pintar los productos
-  - Cuando le demos añadir a alguno de los productos el numero del menu (Carrito (X)) aumentara
-  - Cuando le demos eliminar a alguno de los productos el numero del menu (Carrito (X)) disminuira
-  - Cuando hagamos click en la card del producto navegara a detail/:id
- 
-- Detalle Producto.
-  - Dependiendo del ID mostraremos en otra seccion el Menu + Detalle de producto
-  - Los botones funcionaran igual que en la home
- 
-- Carrito.
-  - Al pulsar en la palabra carrito del menu iremos a /cart donde mostraremos el listado de productos igual que en el template.
-  - Si hay mas de una unidad de producto aparecera el numero de unidades donde creas conveniente
-  - Si le damos a eliminar se eliminar solo una unidad. Si pasa a cero desaparecera del listado.
+- Visualización del catálogo de productos.
+- Vista detallada de cada producto.
+- Navegación entre las diferentes vistas mediante React Router.
+- Añadir productos al carrito.
+- Eliminar productos del carrito.
+- Gestión de varias unidades de un mismo producto.
+- Actualización del número de productos del carrito.
+- Gestión del estado global mediante Context API.
 
-  - Crearemos una version con React Router y ContextAPI (La rama se llamara nombre-apellido-context)
-  - Crearemos otra versión con el sistema de Rutas de Next y Zustand (La rama se llamara nombre-apellido-zustand)
+## Tecnologías utilizadas
 
-  
+- React
+- JavaScript
+- React Router
+- Context API
+- HTML
+- CSS
+- Vite
+
+## Ejecución del proyecto
+
+1. Clonar el repositorio:
+
+   `git clone https://github.com/LmartCid/ecommerce-react.git`
+
+2. Instalar las dependencias:
+
+   `npm install`
+
+3. Ejecutar la aplicación en modo desarrollo:
+
+   `npm run dev`
